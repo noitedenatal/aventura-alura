@@ -1,0 +1,84 @@
+body {
+    background: linear-gradient(to right, rgb(18, 175, 25), rgb(46, 97, 4));
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    margin: 0;
+}
+
+button {
+    background-color: #ffffff;
+    border-radius: 6px;
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+@keyframes borda-animada {
+    0% {
+        border-color: rgb(255, 0, 0);
+    }
+    25% {
+        border-color: rgb(0, 255, 0);
+    }
+    50% {
+        border-color: rgb(0, 0, 255);
+    }
+    75% {
+        border-color: rgb(174, 0, 255);
+    }
+    100% {
+        border-color: rgb(255, 0, 0);
+    }
+}
+
+button:hover {
+    border: 2px solid;
+    animation: borda-animada 2s infinite;
+}
+
+
+.passo {
+    display: none;
+}
+
+.passo.ativo {
+    display:block;
+}
+
+@keyframes borda-animada2 {
+    0% {
+        border-color: rgb(255, 230, 0);
+    }
+    25% {
+        border-color: rgb(255, 166, 0);
+    }
+    50% {
+        border-color: rgb(255, 230, 0);
+    }
+    75% {
+        border-color: rgb(255, 166, 0);
+    }
+    100% {
+        border-color: rgb(255, 230, 0);
+    }
+}
+
+#passo-11 img {
+    border: 4px solid;
+    animation: borda-animada2 2s infinite;
+}
+
+main {
+    text-align: center;
+    max-width: 90%;
+}
+
+img {
+    max-width: 90%;
+    border-radius: 8px;
+}
